@@ -6,4 +6,5 @@ class Cat
     @name = name
     self.owner = owner
     self.mood = 'nervous'
+  end
 end
