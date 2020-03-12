@@ -29,4 +29,22 @@ class Owner
   def say_species
     "I am a #{self.species}."
   end
+
+  def cats
+    Cat.all.select {|cat| cat.owner == self}
+  end
+
+  def dogs
+    Dog.all.select {|dog| dog.owner == self}
+  end
+
+  def buy_cat(name)
+    Cat.new(name, self)
+  end
+
+  def buy_cat(name)
+    Dog.new(name, self)
+  end
+
+
 end
