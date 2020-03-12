@@ -39,12 +39,10 @@ class Owner
   end
 
   def buy_cat(name)
-    cat = Cat.new(name)
-    cat.owner = self
-    binding.pry
+    Cat.new(name, self)
   end
 
-  def buy_cat(name)
+  def buy_dog(name)
     Dog.new(name, self)
   end
 
